@@ -315,7 +315,7 @@ async def start(client, message):
                 ]
                 ]
                 await message.reply_text(
-                    text="<b>Hey {}\nYou are not verified 😐 !\n\nOnce you are verified, No need to watch ads until tomorrow.\n\nKindly verify to continue !</b>",
+                    text="<b>Hey {message.from_user.mention}, \nYou are not verified 😐 !\n\nOnce you are verified, No need to watch ads until tomorrow.\n\nKindly verify to continue !</b>",
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -384,7 +384,7 @@ async def start(client, message):
                 ]
                 ]
                 await message.reply_text(
-                    text="<b>Hey {}\nYou are not verified 😐 !\n\nOnce you are verified, No need to watch ads until tomorrow.\n\nKindly verify to continue !</b>",
+                    text="<b>Hey {message.from_user.mention}, \nYou are not verified 😐 !\n\nOnce you are verified, No need to watch ads until tomorrow.\n\nKindly verify to continue !</b>",
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -448,7 +448,7 @@ async def start(client, message):
                 ]
             ]
         await message.reply_text(
-            text="<b>Hey {}\nYou are not verified 😐 !\n\nOnce you are verified, No need to watch ads until tomorrow.\n\nKindly verify to continue !</b>",
+            text="<b>Hey {message.from_user.mention}, \nYou are not verified 😐 !\n\nOnce you are verified, No need to watch ads until tomorrow.\n\nKindly verify to continue !</b>",
             protect_content=True,
             reply_markup=InlineKeyboardMarkup(btn)
         )
