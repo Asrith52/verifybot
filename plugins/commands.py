@@ -239,7 +239,7 @@ async def start(client, message):
         if is_valid == True:
             await message.reply_text(
                 text=f"<b>Hey {message.from_user.mention}, You are successfully verified !\nNow you have unlimited access for all movies till Tomorrow.</b>",
-                protect_content=True
+                protect_content=False
             )
             await verify_user(client, userid, token)
         else:
@@ -316,7 +316,7 @@ async def start(client, message):
                 ]
                 await message.reply_text(
                     text=f"<b>Hey {message.from_user.mention}, \nYou are not verified 😐 !\n\nOnce you are verified, No need to watch ads until tomorrow.\n\nKindly verify to continue !</b>",
-                    protect_content=True,
+                    protect_content=False,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
                 return
@@ -379,7 +379,7 @@ async def start(client, message):
                 ]
                 await message.reply_text(
                     text=f"<b>Hey {message.from_user.mention}, \nYou are not verified 😐 !\n\nOnce you are verified, No need to watch ads until tomorrow.\n\nKindly verify to continue !</b>",
-                    protect_content=True,
+                    protect_content=False,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
                 return
@@ -434,7 +434,7 @@ async def start(client, message):
             ]
         await message.reply_text(
             text=f"<b>Hey {message.from_user.mention}, \nYou are not verified 😐 !\n\nOnce you are verified, No need to watch ads until tomorrow.\n\nKindly verify to continue !</b>",
-            protect_content=True,
+            protect_content=False,
             reply_markup=InlineKeyboardMarkup(btn)
         )
         return
