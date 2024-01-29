@@ -2119,7 +2119,7 @@ async def advantage_spell_chok(client, msg):
         await asyncio.sleep(30)
         await k.delete()
         return
-    movielist += [movie.get('title') for movie in movies]
+    '''movielist += [movie.get('title') for movie in movies]
     movielist += [f"{movie.get('title')} {movie.get('year')}" for movie in movies]
     SPELL_CHECK[mv_id] = movielist
     btn = [
@@ -2136,7 +2136,7 @@ async def advantage_spell_chok(client, msg):
         photo=(SPELL_IMG),
         caption=(script.CUDNT_FND.format(mv_rqst)),
         reply_markup=InlineKeyboardMarkup(btn)
-    )
+    )'''
     try:
         if settings['auto_delete']:
             await asyncio.sleep(600)
